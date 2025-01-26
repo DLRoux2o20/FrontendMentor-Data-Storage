@@ -1,0 +1,139 @@
+:root {
+	--gradient-color-start: hsl(6, 100%, 80%);
+	--gradient-color-end: hsl(335, 100%, 65%);
+	--pale-blue: hsl(243, 100%, 93%);
+	--grayish-blue: hsl(229, 7%, 55%);
+	--dark-blue: hsl(228, 56%, 26%);
+	--very-dark-blue: hsl(229, 57%, 11%);
+    --body-font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    background-color: var(--dark-blue);
+}
+
+#main-flex {
+    gap: 2vw;
+    position: absolute;
+    left: 20vw;
+    top: 39vh;
+}
+
+#icon-flex {
+    gap: 1em;
+}
+
+.icon-background {
+    box-sizing: content-box;
+    background-color: var(--very-dark-blue);
+    align-content: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.icon-background:first-child {
+    padding-left: 17px;
+    width: 21px;
+}
+
+#logo {
+    margin-bottom: 35px;
+}
+
+#left-div {
+    width: 19vw;
+    height: 22vh;
+    border-radius: 15px;
+    border-top-right-radius: 100px;
+    padding: 40px;
+}
+
+#right-div {
+    width: 20vw;
+    height: 16vh;
+    border-radius: 15px;
+    margin-top: auto;
+}
+
+#image-div {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
