@@ -94,44 +94,61 @@ body {
 	gap: 2vw;
 	position: absolute;
 	left: 20vw;
-	top: 39vh;
+	bottom: 39vh;
+	width: 59vw;
+	height: 11.32rem;
 }
 
 #icon-flex {
 	gap: 1em;
+	width: 100%;
+	height: 3em;
+	justify-content: flex-start;
 }
 
 .icon-background {
-	box-sizing: content-box;
+	box-sizing: border-box;
 	background-color: var(--very-dark-blue);
 	align-content: center;
-	justify-content: center;
-	width: 24px;
-	height: 24px;
+	justify-items: center;
+	width: 3.4em;
+	height: 100%;
 	border-radius: 12px;
-	padding: 14px;
 }
 
-.icon-background:first-child {
-	padding-left: 17px;
-	width: 21px;
+#svg-icon1 {
+	width: 20px;
+	height: 24px;
+}
+
+#svg-icon2 {
+	width: 24px;
+	height: 20px;
+}
+
+#svg-icon3 {
+	width: 24px;
+	height: 16px;
 }
 
 #logo {
-	margin-bottom: 35px;
+	margin-bottom: 1.5em;
+	width: 135px;
+	height: 40px;
 }
 
 #left-div {
 	width: 19vw;
-	height: 22vh;
+	height: 100%;
 	border-radius: 15px;
 	border-top-right-radius: 100px;
-	padding: 40px;
+	padding: 2.5em;
+	padding-bottom: 20px;
 }
 
 #right-div {
 	width: 38vw;
-	height: 16vh;
+	height: 72.73%;
 	border-radius: 15px;
 	margin-top: auto;
     padding: 2.5em;
@@ -161,13 +178,13 @@ b {
 
 #speech-bubble {
     max-width: 10vw;
-	height: 8.5vh;
+	height: 4.38rem;
 	border-radius: 15px;
 	border-bottom-right-radius: 0;
 	background-color: white;
 	position: absolute;
 	top: 0;
-	right: 2.5em;
+	right: 5.2em;
 	justify-content: center;
 	align-content: center;
 	gap: 0.5em;
@@ -242,7 +259,7 @@ b {
 @media only screen and (max-width: 1200px) {
 	#speech-bubble {
 		height: 7vh;
-		top: 1em;
+		top: -1em;
 	}
 
 	#speech-bubble-number {
@@ -253,8 +270,244 @@ b {
 		font-size: 10px;
 		padding-top: 0.5em;
 	}
+
+	#main-flex {
+		height: 8rem;
+		bottom: 42vh;
+	}
+
+	#icon-flex {
+		gap: 0.8em;
+	}
+
+	.icon-background {
+		width: 2.2em;
+		height: 80%;
+	}
+
+	#svg-icon1 {
+		width: 15px;
+		height: 18px;
+	}
+
+	#svg-icon2 {
+		width: 18px;
+		height: 15px;
+	}
+
+	#svg-icon3 {
+		width: 18px;
+		height: 12px;
+	}
+
+	#logo {
+		width: 100px;
+		height: auto;
+		margin-bottom: 1em;
+	}
+
+	#left-div {
+		padding: 1.8em;
+		padding-bottom: auto;
+	}
+
+	#right-div {
+		padding: 1.4em;
+	}
+
+	#flex-text-seperator1 {
+		margin-bottom: 5px;
+	}
+
+	span {
+		font-size: 12px;
+	}
+
+	#progress-bar {
+		height: 15px;
+		margin-top: 4px;
+	}
+
+	#circle {
+		width: 5px;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
+	#main-flex {
+		flex-direction: column;
+		width: 60vw;
+		height: 60vh;
+		left: 20vw;
+		bottom: 20vh;
+	}
 
+	#speech-bubble {
+		position: relative;
+	}
+
+	#left-div {
+		padding: 2.5em;
+		padding-bottom: 3em;
+	}
+
+	#right-div {
+		padding: 2em;
+	}
+
+	#left-div, #right-div {
+		width: 100%;
+		height: 45%;
+	}
+
+	#logo {
+		width: 	180px;
+		margin-bottom: 2em;
+	}
+
+	#icon-flex {
+		height: 4em;
+		gap: 1.5em;
+	}
+
+	.icon-background {
+		width: 4em;
+		height: 100%;
+	}
+
+	#svg-icon1 {
+		width: 23px;
+		height: 29px;
+	}
+
+	#svg-icon2 {
+		width: 29px;
+		height: 23px;
+	}
+
+	#svg-icon3 {
+		width: 30px;
+		height: 20px;
+	}
+
+	span {
+		font-size: 16px;
+	}
+
+	#flex-text-seperator1 {
+		margin-bottom: 1em;
+		justify-content: center;
+	}
+
+	#progress-bar {
+		height: 20px;
+	}
+
+	#circle {
+		width: 10px;
+	}
+
+	#speech-bubble {
+		border-bottom-right-radius: 15px;
+		position: relative;
+		padding-inline: 25%;
+		height: 9vh;
+		top: -3em;
+		left: 0;
+	}
+
+	#speech-bubble-flex {
+		justify-content: center;
+		width: 60vw;
+		height: auto;
+	}
+
+	#speech-bubble-triangle {
+		border: 0;
+		right: -1px;
+		bottom: 50%;
+	}
+
+	#speech-bubble-number {
+		font-size: 2.5em;
+	}
+
+	#speech-bubble-flex-div2 {
+		text-align: left;
+		margin-left: 0.2em;
+	}
+
+	#speech-bubble-text {
+		font-size: 0.8em;
+		width: 5em;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	#image-div {
+		height: 100vh;
+		background-image: url(./images/bg-mobile.png);
+	}
+
+	#main-flex {
+		width: 90vw;
+		height: 100vh;
+		bottom: 0;
+		left: 5vw;
+		gap: 3vh;
+		justify-content: center;
+	}
+
+	#left-div {
+		height: 220px;
+		padding: 3em;
+		padding-bottom: 2em;
+	}
+
+	#right-div {
+		margin-top: 0;
+		max-height: 170px;
+	}
+
+	#logo {
+		width: 135px;
+		margin-bottom: 36px;
+	}
+
+	.icon-background {
+		width: 3.2em;
+	}
+
+	#icon-flex {
+		height: 3.2em;
+		gap: 1em;
+	}
+
+	#svg-icon1 {
+		width: 20px;
+		height: 24px;
+	}
+
+	#svg-icon2 {
+		width: 24px;
+		height: 20px;
+	}
+
+	#svg-icon3 {
+		width: 24px;
+		height: 26px;
+	}
+
+	#speech-bubble {
+		height: 80px;
+		padding-inline: 28%;
+	}
+
+	#speech-bubble-flex {
+		width: 100%;
+	}
+
+	span {
+		font-size: var(--body-font-size);
+	}
 }

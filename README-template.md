@@ -60,7 +60,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-You cant use ::after or ::before on svg elements.
+You cant use ::after or ::before on svg elements. Make a triangle div by using transparent borders.
 
 To see how you can add code snippets, see below:
 
